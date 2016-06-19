@@ -457,3 +457,9 @@ footer .footer-below {
     display: none;
     opacity: 0;
 }
+
+.panel-default>.panel-heading .badge{
+  margin-left:5px;
+  background:white;
+  color:#2c3e50;
+}
