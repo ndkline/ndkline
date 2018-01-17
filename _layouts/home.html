@@ -8,14 +8,24 @@ layout: default
 
     {% for project in site.projects %}
     <div class="col-12 col-md-4 portfolio-item text-center">
-        <a href="{{ project.url }}" class="portfolio-link" >
-          <img src="{{ project.image }}"  class="img-responsive" alt="">
-          <h2>{{ project.title }}</h2>
-          <p>{{ project.description }}</p>
-        </a>
+      <a href="{{ project.url }}" class="portfolio-link" >
+        <img src="{{ project.image }}"  class="img-responsive" alt="">
+        <h2>{{ project.title }}</h2>
+        <p>{{ project.description }}</p>
+      </a>
     </div>
+    {% endfor %}
+  
 
-      
+    {% for contrib in site.contributions %}
+    <div class="col-12 col-md-6 portfolio-item text-center">
+      <img src="{{ contrib.image }}"  class="img-responsive" alt="">
+      <h2>
+        {{ contrib.title }}
+      </h2>
+      <p><a target="_blank" href="{{ contrib.protocol }}://{{ contrib.site }}"><i class="fa fa-globe" aria-hidden="true"></i> {{ contrib.site | escape }}</a> </p>
+      <p>{{ contrib.content }}</p>
+    </div>
     {% endfor %}
   
     

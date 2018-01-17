@@ -34,6 +34,9 @@ plugins:
 collections:
   projects:
     output: true
+  contributions:
+    output: false
+  
 
 permalink: /blog/:year/:month/:day/:title.html
 
