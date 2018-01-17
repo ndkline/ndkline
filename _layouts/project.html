@@ -21,10 +21,24 @@ layout: default
       {{ content }}
     </div>
 
+    
+
+    {% if page.image-2-content %}
+    <div class="col-12 col-md-3">
+        <img src="{{ page.image-content | relative_url }}"  class="img-responsive" alt="">
+        <p class="text-center">{{ page.image-content-caption }}</p>
+    </div>
+    <div class="col-12 col-md-3">
+        <img src="{{ page.image-2-content | relative_url }}"  class="img-responsive" alt="">
+        <p class="text-center">{{ page.image-2-content-caption }}</p>
+    </div>
+    {% elsif page.image-content %}
     <div class="col-12 col-md-6">
         <img src="{{ page.image-content | relative_url }}"  class="img-responsive" alt="">
-        <p>{{ page.image-content-caption }}</p>
+        <p class="text-center">{{ page.image-content-caption }}</p>
     </div>
+    {% endif %}
+
 
   </article>
 
