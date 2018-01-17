@@ -32,14 +32,8 @@ plugins:
   - jekyll-feed
 
 collections:
-  projects:
-    output: true
-  contributions:
-    output: true
-  experience:
-    output: true
-  education:
-    output: true
+  - projects
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
