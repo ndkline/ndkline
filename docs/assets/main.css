@@ -66,17 +66,39 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: #2a7ae2;
+  color: #45604c;
   text-decoration: none; }
-  a:visited {
-    color: #1756a9; }
   a:hover {
-    color: #111;
+    color: #72997c;
     text-decoration: underline; }
   .social-media-list a:hover {
     text-decoration: none; }
     .social-media-list a:hover .username {
       text-decoration: underline; }
+
+a.blue {
+  color: #14A1AF; }
+  a.blue:hover {
+    color: #0c626a;
+    text-decoration: none; }
+
+a.green {
+  color: #428E42; }
+  a.green:hover {
+    color: #2a5a2a;
+    text-decoration: none; }
+
+a.orange {
+  color: #F47B28; }
+  a.orange:hover {
+    color: #c5560a;
+    text-decoration: none; }
+
+a.purple {
+  color: #9E1D58; }
+  a.purple:hover {
+    color: #5d1134;
+    text-decoration: none; }
 
 /**
  * Blockquotes
@@ -150,6 +172,9 @@ pre {
   padding-right: 5px; }
 .social-media-list li + li {
   padding-top: 5px; }
+
+nav {
+  background: #f4f8f7; }
 
 /**
  * Site header
