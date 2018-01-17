@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+
+<main class="container" aria-label="Content">
+
+  <article class="row">
+
+    <div class="col-md-9">
+        <h1 class="display-3">{{ page.title | escape }}</h1>
+        <p class="lead" style="font-weight:400; padding:1% 0;">{{ page.description  }}</p>
+    </div>
+    
+    <div class="col-md-3">
+        <img src="{{ page.image | relative_url }}"  class="img-responsive" alt="">
+    </div>
+    
+    <div class="col-12 col-md-6">
+      
+      {{ content }}
+    </div>
+
+    <div class="col-12 col-md-6">
+        <img src="{{ page.image-content | relative_url }}"  class="img-responsive" alt="">
+    </div>
+
+  </article>
+
+</main>

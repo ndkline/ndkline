@@ -32,7 +32,8 @@ plugins:
   - jekyll-feed
 
 collections:
-  - projects
+  projects:
+    output: true
 
 
 # Exclude from processing.

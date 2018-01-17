@@ -2,8 +2,22 @@
 layout: default
 ---
 
-{% for project in site.projects %}
-<h2>{{ project.title }}</h2>
-<p>{{ project.description }}</p>
-<p><a href="{{ project.url }}">{{ project.title }}</a></p>
-{% endfor %}
+<div class="container">
+  <div class="row">
+    
+
+    {% for project in site.projects %}
+    <div class="col-12 col-md-4 portfolio-item text-center">
+        <a href="{{ project.url }}" class="portfolio-link" >
+          <img src="{{ project.image }}"  class="img-responsive" alt="">
+          <h2>{{ project.title }}</h2>
+          <p>{{ project.description }}</p>
+        </a>
+    </div>
+
+      
+    {% endfor %}
+  
+    
+  </div>
+</div>
