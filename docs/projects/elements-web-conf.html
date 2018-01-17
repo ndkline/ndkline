@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>CETC Alpha Launch</title>
-  <meta name="description" content="The Carrara Education Technology Center is proud to announce the Alpha launch of it’s website found at cetc.ed.psu.edu.">
+  <title>Elements Web Conference</title>
+  <meta name="description" content="Worked as a team to develop a web application for the yearly web conference hosted by PSU. The site was built using Drupal 7, the Conference Organizing Distr...">
   
   <link rel="icon" href="/favicon.ico">
   
@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="/assets/font-awesome/css/font-awesome.min.css">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="http://localhost:4000/2016/09/27/here-s-a-new-post.markdown.html">
+  <link rel="canonical" href="http://localhost:4000/projects/elements-web-conf">
   <link rel="alternate" type="application/rss+xml" title="ndKline" href="/feed.xml">
 
   
@@ -89,31 +89,40 @@
 
 
    
-    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <main class="container" aria-label="Content">
 
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">CETC Alpha Launch</h1>
-    <p class="post-meta">
-      <time datetime="2016-09-27T12:40:00-04:00" itemprop="datePublished">
-        
-        Sep 27, 2016
-      </time>
-      </p>
-  </header>
+  <article class="row">
 
-  <div class="post-content" itemprop="articleBody">
-    <p>The Carrara Education Technology Center is proud to announce the Alpha launch of it’s website found at <a href="https://cetc.ed.psu.edu/">cetc.ed.psu.edu</a>.</p>
+    <div class="col-md-10">
+        <h1 class="display-3">Elements Web Conference</h1>
+        <p class="lead" style="font-weight:400; padding:1% 0;">Developed website for Penn State's yearly web conference</p>
+    </div>
+    
+    <div class="col-md-2">
+        <img src="/img/e_small_orange.png"  class="img-responsive" alt="">
+    </div>
+    
+    <div class="col-12 col-md-6">
+      
+      <p>Worked as a team to develop a web application for the yearly web conference hosted by <a href="https://www.elements.psu.edu/" target="_blank">PSU</a>. The site was built using <a href="https://www.drupal.org/" target="_blank">Drupal 7</a>, the <a href="http://usecod.com/" target="_blank">Conference Organizing Distribution (COD)</a> module, and <a href="http://foundation.zurb.com/" target="_blank">Zurb Foundation 5</a>. As a full stack developer I contributed from custom module development to writing SASS for theming.</p>
 
-<p>Since my start with the Carrara Education Technology Center, or CETC, I have been tasked with designing and developing a new web presence for the College of Education. If you visit their <a href="ed.psu.edu">current site</a> and explore a little bit, you will notice it’s rather challenging to navigate to information that would be desirable to most types of people that would visit the site, students, faculty, prospective students, etc… It’s easy to drill down into content and get lost. Content is also slow to be written, edited, and published. The technical side of our infrastructure is even worse; We run Plone on Windows servers with a caching Varnish (Linux) server. This is a gross simplification of our current stack, however the point I’m making is that the bar of entry on any of our projects is rather steep for most developers.</p>
+<ul>
+  <li>Client: <a href="http://www.psu.edu/" target="_blank">The Pennsylvania State University</a></li>
+  <li>Date: June 13-15, 2016</li>
+  <li>Service: Full Stack Developer</li>
+</ul>
 
-<p>To solve these issues I decoupled our website’s public views and CMS to focus on the content creation process. I nixed Plone and our expensive Windows servers for <a href="https://www.drupal.org/">Drupal</a> 7 and comparatively Linux servers. Within Drupal I was able to rapidly define content creation workflows for our staff and expose the data via <a href="https://en.wikipedia.org/wiki/Representational_state_transfer">RESTful services</a>. By splitting the CMS and public views apart, I am able to focus development on either backend and front-end. The backend would be Drupal and front-end will be in <a href="https://angularjs.org/">AngularJS</a>, <a href="https://facebook.github.io/react/">ReactJS</a>, or another front-end JavaScript framework.</p>
 
-<p>The CETC website will serve as the Drupal portion of the previously described stack. Any other site we build will consume the content via the RESTful service. As we grow our content, I will be able to build a specialized team around this architecture. The backend team will work within Drupal and front-end team will focus on AngularJS/ReactJS.</p>
+    </div>
 
-  </div>
+    <div class="col-12 col-md-6">
+        <img src="/img/elements-homepage-feature-color.jpg"  class="img-responsive" alt="">
+        <p></p>
+    </div>
 
-  
-</article>
+  </article>
+
+</main>
 
      
 

@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>PA to NYC</title>
-  <meta name="description" content="There have been several major updates since I last posted. I moved from the center of Pennsylvania to the heart of the American empire, NYC. Since moving her...">
+  <title>RESTful APIs</title>
+  <meta name="description" content="If you’re a front-end developer, chances are you’ve worked with an API, whether it’s RESTful or not is another story that will not be addressed here. What I ...">
   
   <link rel="icon" href="/favicon.ico">
   
@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="/assets/font-awesome/css/font-awesome.min.css">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="http://localhost:4000/2017/02/02/pa-to-nyc.html">
+  <link rel="canonical" href="http://localhost:4000/blog/2017/03/20/restful-apis.html">
   <link rel="alternate" type="application/rss+xml" title="ndKline" href="/feed.xml">
 
   
@@ -92,23 +92,27 @@
     <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">PA to NYC</h1>
+    <h1 class="post-title" itemprop="name headline">RESTful APIs</h1>
     <p class="post-meta">
-      <time datetime="2017-02-02T11:48:07-05:00" itemprop="datePublished">
+      <time datetime="2017-03-20T14:17:07-04:00" itemprop="datePublished">
         
-        Feb 2, 2017
+        Mar 20, 2017
       </time>
       </p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>There have been several major updates since I last posted. I moved from the center of Pennsylvania to the heart of the American empire, NYC. Since moving here I’ve seen countless concerts, gone to talks at Google’s NYC HQ, and sampled foods from all over the world. And given everything that’s been happening to the country, I’ve branched away from the <a href="http://www.progcode.co/">Progressive Coders Network</a> and founded a new political development group. More to come on that in the coming weeks though.</p>
+    <p>If you’re a front-end developer, chances are you’ve worked with an API, whether it’s RESTful or not is another story that will not be addressed here. What I will discuss is how elegantly RESTful architecture makes backend to front-end relationship an ideal structure for development.</p>
 
-<p><strong>A little about the new job…</strong></p>
+<p>As a front-end developer at Columbia University, I’ve had the pleasure of working with other developers’ APIs. Now, the API might not be considered RESTful that we were working with (a level 1 or 2 on the <a href="https://martinfowler.com/articles/richardsonMaturityModel.html">Richardson Maturity Model</a>) but the structure is close enough. The project allowed for me to focus solely on the user experience and design of the client side experience without having to worry about server side template rendering, using <a href="https://angularjs.org/">AngularJS</a> as the front-end framework.</p>
 
-<p>Before at Penn State I wore all the hats. And by that I mean I had sysadmin, programmer, designer, QA, webmaster, information architect, etc… responsibilities. Never could I find time to focus on any one field, I found myself overloaded quickly, and at a less than desirable pay rate. Columbia University found me and relived a lot of that stress. I’m now on their Interactive Services team as a front-end engineer. We’re mostly working in Drupal, with some headless builds and some AngularJS/RESTful apps filling in gaps.</p>
+<p>The API I was connecting to was populated with dummy data while he worked on writing the backend logic. As he finished the results changed organically as it was committed and pushed. But how is this better than the typical server-side template processing?</p>
 
-<p>All in all the transition was smooth, busy, but smooth. I’ll be visiting Penn State this weekend for a bit of fun and to pickup a few things. Everything went well and that’s all I can ask for.</p>
+<p>Well, for one the API creates a clear distinction between front-end and backend. When the templates are processed on the server side, developers can step on each other’s toes. In Drupal, for example, the addition of a module can change how some results are written completely, making the front-end dev adjust their code.</p>
+
+<p>Another bonus for RESTful APIs is versioning. If major changes occur to the structure of the API, you can progress to another version number without retiring the old API until you’re ready. While this can be done with most LAMP frameworks, it’s a more convoluted process and again, messy.</p>
+
+<p>Processing the templates on the client side saves you server processing resources. For large scale applications, this can mean hundreds of dollars. It also gives you more flexibility with scaling, letting your resources focus on the computations and leaving the client to render the aesthetics.</p>
 
   </div>
 

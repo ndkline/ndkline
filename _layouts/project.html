@@ -7,12 +7,12 @@ layout: default
 
   <article class="row">
 
-    <div class="col-md-9">
+    <div class="col-md-10">
         <h1 class="display-3">{{ page.title | escape }}</h1>
         <p class="lead" style="font-weight:400; padding:1% 0;">{{ page.description  }}</p>
     </div>
     
-    <div class="col-md-3">
+    <div class="col-md-2">
         <img src="{{ page.image | relative_url }}"  class="img-responsive" alt="">
     </div>
     
@@ -23,6 +23,7 @@ layout: default
 
     <div class="col-12 col-md-6">
         <img src="{{ page.image-content | relative_url }}"  class="img-responsive" alt="">
+        <p>{{ page.image-content-caption }}</p>
     </div>
 
   </article>

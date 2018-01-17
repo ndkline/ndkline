@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Launching the Center for Education and Civil Rights Website</title>
-  <meta name="description" content="Today we are launching the Center for Education and Civil Rights (CECR) website. Ross Designs and Consulting was contracted to build the site and produced qu...">
+  <title>Internship Aggregate, UX, and AngularJS -- A Story on Blowing Minds</title>
+  <meta name="description" content="Reception of a New Tool">
   
   <link rel="icon" href="/favicon.ico">
   
@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="/assets/font-awesome/css/font-awesome.min.css">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="http://localhost:4000/2016/10/05/new-post.markdown.html">
+  <link rel="canonical" href="http://localhost:4000/blog/2016/10/13/internship-aggregate-ux-and-angularjs-a-story-on-blowing-minds.markdown.html">
   <link rel="alternate" type="application/rss+xml" title="ndKline" href="/feed.xml">
 
   
@@ -92,19 +92,31 @@
     <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">Launching the Center for Education and Civil Rights Website</h1>
+    <h1 class="post-title" itemprop="name headline">Internship Aggregate, UX, and AngularJS -- A Story on Blowing Minds</h1>
     <p class="post-meta">
-      <time datetime="2016-10-05T14:51:00-04:00" itemprop="datePublished">
+      <time datetime="2016-10-13T10:32:00-04:00" itemprop="datePublished">
         
-        Oct 5, 2016
+        Oct 13, 2016
       </time>
       </p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>Today we are launching the <a href="https://cecr.ed.psu.edu/">Center for Education and Civil Rights</a> (CECR) website. <a href="http://rossdc.com/">Ross Designs and Consulting</a> was contracted to build the site and produced quality work.</p>
+    <h2 id="reception-of-a-new-tool">Reception of a New Tool</h2>
 
-<p>The site resides under one of the servers I administer and maintain. We’re excited to be expanding our Drupal infrastructure in a more maintainable direction.</p>
+<p>Lately I’ve been getting awesome feedback on my <a href="https://github.com/ndkline/rhs_intern_db">Internship Aggregate</a> I launched at the end of summer. The students are telling faculty/staff in that unit how much they like the tool, how easy it is to use, etc. Basically they’re confirming the UX has been improved significantly since the original ColdFusion service launched. Best part is, I could scale the new architecture to serve the whole University basically overnight.</p>
+
+<p>Here’s the kicker: The unit that requested it wanted it behind a login so no one outside their unit could use it or even see it. PSU bureaucracy at its finest.</p>
+
+<p>Regardless, I’m very pleased with the application’s reception amongst its users. Feel free to fork the project on <a href="https://github.com/ndkline/rhs_intern_db">github</a>.</p>
+
+<h2 id="technical-overview">Technical Overview</h2>
+
+<p>I was brought into this project by our lead programmer when the request was made for the update to an internship database. They were wanting an update to the look and feel of the site, essentially a UX overhaul. The old application was built in ColdFusion at around the turn of the century, so needless to say it in fact did need a huge facelift.</p>
+
+<p>We decided to retain the backend “CMS” portion of the application and expose the content via a RESTful API. Once we got that working, I took the front-end and Joe (the other programmer) took updating the backend. We were able to work incredibly well since the my front-end design is only dependent upon the API. It was one of the most fluid front-end/backend collaborations I’ve experienced.</p>
+
+<p>The RESTful API and CMS were built in, or remained in, ColdFusion while I used AngularJS as a front-end framework and Zurb Foundation for scaffolding.</p>
 
   </div>
 

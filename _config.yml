@@ -35,6 +35,7 @@ collections:
   projects:
     output: true
 
+permalink: /blog/:year/:month/:day/:title.html
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
