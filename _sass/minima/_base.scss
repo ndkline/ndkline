@@ -135,7 +135,23 @@ a.purple{
 
 
 
+.sitename{
+  font-weight: 300;
+  font-size: 150%;
+  padding-left: 0px;
+  color: darken($light_steel_blue, 60%);
 
+  &:hover {
+    color: darken($light_steel_blue, 15%);
+    text-decoration: underline;
+  }
+}
+#navbar > ul.navbar-nav.mr-auto > li > a{
+  color: #F47B28;
+}
+.grey{
+  color: #7F7F7F;
+}
 
 
 

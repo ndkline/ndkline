@@ -94,6 +94,21 @@ a.purple {
     color: #5d1134;
     text-decoration: none; }
 
+.sitename {
+  font-weight: 300;
+  font-size: 150%;
+  padding-left: 0px;
+  color: #2c3060; }
+  .sitename:hover {
+    color: #9ea3d3;
+    text-decoration: underline; }
+
+#navbar > ul.navbar-nav.mr-auto > li > a {
+  color: #F47B28; }
+
+.grey {
+  color: #7F7F7F; }
+
 /**
  * Clearfix
  */
@@ -449,18 +464,6 @@ nav {
 
 main.page-content {
   padding-top: 69px; }
-
-.sitename {
-  font-weight: 300;
-  font-size: 150%;
-  padding-left: 0px;
-  color: #F47B28; }
-
-#navbar > ul.navbar-nav.mr-auto > li > a {
-  color: #F47B28; }
-
-.grey {
-  color: #7F7F7F; }
 
 .bold {
   font-weight: 500; }
