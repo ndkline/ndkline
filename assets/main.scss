@@ -1,0 +1,98 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+body{
+    font-family:'Open Sans', sans-serif;
+    line-height: 1.5;
+}
+p{
+  font-size: 1.1em;
+}
+nav{
+font-family: 'Montserrat', sans-serif;
+}
+main.page-content{
+  padding-top: 69px;
+}
+.sitename{
+font-weight: 300;
+font-size: 150%;
+padding-left: 0px;
+color: #F47B28;
+}
+#navbar > ul.navbar-nav.mr-auto > li > a{
+color: #F47B28;
+}
+.grey{
+color: #7F7F7F;
+}
+.bold{
+font-weight: 500;
+}
+.bottom {
+    position: absolute;
+    bottom: 0;
+    padding-bottom:5%;
+    margin-right: 0;
+}
+.site-header{
+    border-top:none;
+}
+
+.eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+body{
+    background:
+    linear-gradient(
+    rgba(255, 255, 255, 0.95), 
+    rgba(255, 255, 255, 0.95)
+    ),
+    url('https://res.cloudinary.com/solar-innovations-inc/image/upload/v1515523101/assets/e5dh3zjehiyfal6oqbir.jpg');
+
+}
+
+.grad-orange{
+  background:
+  linear-gradient(
+    to bottom right,
+    rgba(245, 136,61, .91),
+    rgba(244, 123, 40, 1) 
+  );
+  color: white;
+}
+
+.requestquote{
+  border: #428e42  solid 50px;
+  border-right:none;
+  border-left:none;
+  background:white;
+} 
+
+.greenLink{
+  color: #428e42;
+}
+.greyLink{
+  color:#7F7F7F;
+}
+.sitename{
+    // color:#F47B28!important;
+}
+
+.footer{
+  // background:
+  // radial-gradient(
+  //   rgba(255, 255, 255, .7) 3%, 
+  //   rgba(255, 255,255, 1) 
+  // ),
+  //   url('https://res.cloudinary.com/solar-innovations-inc/image/upload/v1515513129/conservatories/czoc5dsdnk2nisnagdzt.jpg');
+  background-size:cover;background-position:center;
+}
+

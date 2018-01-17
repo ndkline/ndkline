@@ -1,0 +1,14 @@
+---
+layout: post
+title: "PA to NYC"
+date: "2017-02-02 11:48:07 -0500"
+tags: "PA, NYC, job upgrade, political action"
+---
+
+There have been several major updates since I last posted. I moved from the center of Pennsylvania to the heart of the American empire, NYC. Since moving here I've seen countless concerts, gone to talks at Google's NYC HQ, and sampled foods from all over the world. And given everything that's been happening to the country, I've branched away from the [Progressive Coders Network](http://www.progcode.co/) and founded a new political development group. More to come on that in the coming weeks though.
+
+**A little about the new job...**
+
+Before at Penn State I wore all the hats. And by that I mean I had sysadmin, programmer, designer, QA, webmaster, information architect, etc... responsibilities. Never could I find time to focus on any one field, I found myself overloaded quickly, and at a less than desirable pay rate. Columbia University found me and relived a lot of that stress. I'm now on their Interactive Services team as a front-end engineer. We're mostly working in Drupal, with some headless builds and some AngularJS/RESTful apps filling in gaps.
+
+All in all the transition was smooth, busy, but smooth. I'll be visiting Penn State this weekend for a bit of fun and to pickup a few things. Everything went well and that's all I can ask for.
