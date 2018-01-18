@@ -1,6 +1,7 @@
 ---
 layout: contrib
 title: Linux
+category: Operating Systems
 icons:
 - fa-linux
 - fa-linux

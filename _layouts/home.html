@@ -13,8 +13,8 @@ layout: default
     <div class="col-12 col-md-4 portfolio-item text-center">
       <a href="{{ project.url }}" class="portfolio-link" >
         <img src="{{ project.image }}"  class="img-responsive" alt="">
-        <h2>{{ project.title }}</h2>
-        <p>{{ project.description }}</p>
+        <h3>{{ project.title }}</h3>
+        <!-- <p>{{ project.description }}</p> -->
       </a>
     </div>
     {% endfor %}
@@ -22,11 +22,17 @@ layout: default
       <h2>Contributions</h2>
     </div>
     {% for contrib in contributions %}
-    <div class="col-12 col-md-6 portfolio-item text-center">
+      {% if forloop.first == true %}
+      <div class="col-12  portfolio-item text-left">
+      {% else %}
+      <div class="col-12 col-md-6 portfolio-item text-left">
+      {% endif %}
+
+    <!-- <div class="col-12 col-md-6 portfolio-item text-left"> -->
       <img src="{{ contrib.image }}"  class="img-responsive" alt="">
-      <h2>
+      <h3>
         {{ contrib.title }}
-      </h2>
+      </h3>
       <p><a target="_blank" href="{{ contrib.protocol }}://{{ contrib.site }}"><i class="fa fa-globe" aria-hidden="true"></i> {{ contrib.site | escape }}</a> </p>
       <p>{{ contrib.content }}</p>
     </div>
@@ -36,11 +42,12 @@ layout: default
       <h2>Experience</h2>
     </div>
     {% for exp in site.experience %}
+      
     <div class="col-12 col-md-6 portfolio-item text-center">
       <img src="{{ exp.image }}"  class="img-responsive" alt="">
-      <h2>
+      <h3>
         {{ exp.title }}
-      </h2>
+      </h3>
       <p><a target="_blank" href="{{ exp.protocol }}://{{ exp.site }}"><i class="fa fa-globe" aria-hidden="true"></i> {{ exp.site | escape }}</a> </p>
       <p>{{ exp.content }}</p>
     </div>

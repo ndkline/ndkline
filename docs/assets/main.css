@@ -60,10 +60,12 @@ li > ol {
  * Links
  */
 a {
-  color: #45604c;
+  color: #63619D;
   text-decoration: none; }
+  a h3 {
+    color: black; }
   a:hover {
-    color: #72997c;
+    color: #45446e;
     text-decoration: underline; }
   .social-media-list a:hover {
     text-decoration: none; }

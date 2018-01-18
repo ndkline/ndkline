@@ -84,18 +84,21 @@ li {
  * Links
  */
 a {
-  color: darken($brand-color, 35%);
+  color: $dark_steel_blue;
   text-decoration: none;
 
   // &:visited {
   //   color: darken($brand-color, 15%);
   // }
-
+  h3 {
+    color: black;
+  }
+  
   &:hover {
-    color: darken($brand-color, 15%);
+    color: darken($dark_steel_blue, 15%);
     text-decoration: underline;
   }
-
+  
   .social-media-list &:hover {
     text-decoration: none;
 
