@@ -3,6 +3,7 @@ layout: contrib
 title: Manhattanville
 site: manhattanville.columbia.edu
 protocol: http
+weight: 5
 ---
 
 

@@ -3,6 +3,7 @@ layout: contrib
 title: Columbia Tech Ventures
 site: techventures.columbia.edu
 protocol: http
+weight: 3
 ---
 
 

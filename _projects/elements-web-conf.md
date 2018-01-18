@@ -5,6 +5,7 @@ description: Developed website for Penn State's yearly web conference
 image: /img/e_small_orange.png
 image-content: /img/elements-homepage-feature-color.jpg
 image-content-caption: null
+weight: 5
 ---
 
 

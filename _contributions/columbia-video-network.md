@@ -3,6 +3,7 @@ layout: contrib
 title: Columbia Video Network
 site: cvn.columbia.edu
 protocol: https
+weight: 2
 ---
 
 

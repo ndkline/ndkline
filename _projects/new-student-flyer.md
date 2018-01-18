@@ -7,6 +7,7 @@ image-content: /img/edFlyer.png
 image-content-caption: front
 image-2-content: /img/edFlyer2.png
 image-2-content-caption: back
+weight: 2
 ---
 
 

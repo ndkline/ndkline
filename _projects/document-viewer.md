@@ -5,6 +5,7 @@ description: AngularJS application with RESTful API
 image: /img/culogo1.png
 image-content: /img/docviewer.png
 image-content-caption: "Note: Data endpoints were disabled for the screenshot to protect confidential data"
+weight: 6
 ---
 
 

@@ -5,6 +5,7 @@ description: Developed a IT ticketing portal and system
 image: /img/kiosk.png
 image-content: /img/d8PresntationCover.png
 image-content-caption: null
+weight: 1
 ---
 
 

@@ -1,12 +1,15 @@
 ---
 layout: default
 ---
+{% assign projects = site.projects | sort: 'weight' | reverse  %} 
+{% assign contributions = site.contributions | sort: 'weight' | reverse  %} 
 
 <div class="container">
   <div class="row">
-    
-
-    {% for project in site.projects %}
+    <div class="col-12">
+      <h2>Projects</h2>
+    </div>
+    {% for project in projects %}
     <div class="col-12 col-md-4 portfolio-item text-center">
       <a href="{{ project.url }}" class="portfolio-link" >
         <img src="{{ project.image }}"  class="img-responsive" alt="">
@@ -15,9 +18,10 @@ layout: default
       </a>
     </div>
     {% endfor %}
-  
-
-    {% for contrib in site.contributions %}
+    <div class="col-12">        
+      <h2>Contributions</h2>
+    </div>
+    {% for contrib in contributions %}
     <div class="col-12 col-md-6 portfolio-item text-center">
       <img src="{{ contrib.image }}"  class="img-responsive" alt="">
       <h2>
@@ -28,6 +32,19 @@ layout: default
     </div>
     {% endfor %}
   
+    <div class="col-12">        
+      <h2>Experience</h2>
+    </div>
+    {% for exp in site.experience %}
+    <div class="col-12 col-md-6 portfolio-item text-center">
+      <img src="{{ exp.image }}"  class="img-responsive" alt="">
+      <h2>
+        {{ exp.title }}
+      </h2>
+      <p><a target="_blank" href="{{ exp.protocol }}://{{ exp.site }}"><i class="fa fa-globe" aria-hidden="true"></i> {{ exp.site | escape }}</a> </p>
+      <p>{{ exp.content }}</p>
+    </div>
+    {% endfor %}
     
   </div>
 </div>
