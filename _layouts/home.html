@@ -58,22 +58,13 @@ layout: default
               {{item.title}}  
             </h4>
             {{item.content}}
+            {% for icon in item.icons %}
+               {{ icon }}
+            {%endfor%}
           </div>
         {%endfor%}
     {%endfor%}
-    {% for exp in experience %}
     
-    <div class="col-12 col-md-6 portfolio-item text-center">
-      
-      <img src="{{ exp.image }}"  class="img-responsive" alt="">
-      <h3>
-        {{ exp.title }}
-      </h3>
-      <p>{{ exp.category }}</p>
-      <p><a target="_blank" href="{{ exp.protocol }}://{{ exp.site }}"><i class="fa fa-globe" aria-hidden="true"></i> {{ exp.site | escape }}</a> </p>
-      <p>{{ exp.content }}</p>
-    </div>
-    {% endfor %}
     
   </div>
 </div>
