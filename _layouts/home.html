@@ -4,6 +4,7 @@ layout: default
 {% assign projects = site.projects | sort: 'weight' | reverse  %} 
 {% assign contributions = site.contributions | sort: 'weight' | reverse  %} 
 
+
 <div class="container">
   <div class="row">
     <div class="col-12">
@@ -37,17 +38,38 @@ layout: default
       <p>{{ contrib.content }}</p>
     </div>
     {% endfor %}
-  
+  </div>
+
+  <div class="row">
     <div class="col-12">        
       <h2>Experience</h2>
     </div>
-    {% for exp in site.experience %}
-      
+
+    {% assign categories = site.experience | group_by: "category" | sort: "title" %}
+    {% for category in categories %}
+      <div class="col-12">
+        <div class="h3">
+          {{ category.name }}
+        </div>
+      </div>
+        {% for item in category.items %}
+          <div class="col-12 col-md-4">
+            <h4>
+              {{item.title}}  
+            </h4>
+            {{item.content}}
+          </div>
+        {%endfor%}
+    {%endfor%}
+    {% for exp in experience %}
+    
     <div class="col-12 col-md-6 portfolio-item text-center">
+      
       <img src="{{ exp.image }}"  class="img-responsive" alt="">
       <h3>
         {{ exp.title }}
       </h3>
+      <p>{{ exp.category }}</p>
       <p><a target="_blank" href="{{ exp.protocol }}://{{ exp.site }}"><i class="fa fa-globe" aria-hidden="true"></i> {{ exp.site | escape }}</a> </p>
       <p>{{ exp.content }}</p>
     </div>
