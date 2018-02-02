@@ -7,10 +7,10 @@ layout: default
 <div class="conatiner-fluid" id="fold">
   <div class="row py-5">
     <div class="col-12 text-center ">
-      <h1 class="text-uppercase pb-3">
+      <h1 class="text-uppercase">
         {{ site.title }}
       </h1>
-      
+      <hr class="light">
       <p class="pb-3">
         {% for role in site.roles %}
           {% if forloop.first %}
@@ -28,22 +28,29 @@ layout: default
   </div>
 </div>
 
-<div class="container">
-  <div class="row">
-    <div class="col-12">
-      <h2>Projects</h2>
+<div class="container ">
+  <div class="row ">
+    <div class="col-12 mt-5">
+      <h2 class="text-center text-uppercase display-1">Projects</h2>
+      <hr class="light">
+      
     </div>
     {% for project in projects %}
-    <div class="col-12 col-md-4 portfolio-item text-center">
+    <div class="col-12 col-md-4 portfolio-item text-center px-5 pt-5">
       <a href="{{ project.url }}" class="portfolio-link" >
-        <img src="{{ project.image }}"  class="img-responsive" alt="">
-        <h3>{{ project.title }}</h3>
+        <img src="{{ project.image }}"  class="img-responsive p-1" alt="">
+        <h3 class="mt-3">{{ project.title }}</h3>
         <!-- <p>{{ project.description }}</p> -->
       </a>
     </div>
     {% endfor %}
-    <div class="col-12">        
-      <h2>Contributions</h2>
+
+
+    <div class="col-12 mt-5">        
+
+
+      <h2 class="text-center text-uppercase display-1">Contributions</h2>
+      <hr class="light">
     </div>
     {% for contrib in contributions %}
       {% if forloop.first == true %}

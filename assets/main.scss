@@ -89,3 +89,12 @@ body{
   background: $dark_steel_blue;
   color:white;
 }
+
+hr.light{
+  margin: 25px auto ;
+  padding: 0;
+  max-width: 250px;
+  border: 0;
+  border-top: solid 4px;
+  text-align: center;
+}
