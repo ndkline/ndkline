@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>About</title>
-  <meta name="description" content="Nicholas is a Senior Application Developer at Solar Innovations where he brings a passion for modern web development, user interface design, and technology e...">
+  <title>Highly Optimized SSG Website</title>
+  <meta name="description" content="Over the last two weeks I have been rebuiling a website meant for walking users through the greenhouse planning process. Most of the content was redeveloped ...">
   
   <link rel="icon" href="/favicon.ico">
   
@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="/assets/font-awesome/css/font-awesome.min.css">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="http://localhost:4000/about/">
+  <link rel="canonical" href="http://localhost:4000/blog/2018/01/31/highly-optimized-ssg-website.html">
   <link rel="alternate" type="application/rss+xml" title="ndKline" href="/feed.xml">
 
   
@@ -89,75 +89,53 @@
 
 
    
-    <!-- <div class="crop">
-  <img  src="">
-</div> -->
+    <article class="post container pt-5" itemscope itemtype="http://schema.org/BlogPosting">
 
-<!-- <div class="jumbotron jumbotron-fluid eq-height " style="background:url(''); background-repeat: no-repeat;background-position: center;background-size:cover; ">
-  <div class="container bottom text-center  pt-5" style="background:rgba(0,0,0,.7); width:100%; max-width:none; text-shadow: rgb(0, 0, 0) 1px 2px;">
-    <h1 class="display-4 pt-5">About</h1>
-    <p class="lead">dd</p>
-  </div>
-</div> -->
-
-<div class="jumbotron jumbotron-fluid mb-5" style="position:relative;background-image:url('');background-size:cover;background-position:center;  height: 65vh; color:white;">
-  <div class="container" style="position: absolute; bottom: 0;background:rgba(0,0,0,.7); width:100%; max-width:none; text-shadow: rgb(0, 0, 0) 1px 2px;">
-    <div class="row">
-      <div class="offset-1 col-11">
-
-        <h1 class="display-3"></h1>
-        <p class="lead" style="font-weight:400; padding:1% 0;"></p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<main class="container" aria-label="Content">
-
-  <article class="row">
-
+  <header class="post-header row">
     <div class="col-12">
-      
+      <h1 class="post-title" itemprop="name headline">Highly Optimized SSG Website</h1>
+      <p class="post-meta">
+        <time datetime="2018-01-31T13:17:07-05:00" itemprop="datePublished">
+          
+          Jan 31, 2018
+        </time>
+        </p>
     </div>
-    
-    <div class="col-12 col-md-4">
-      <h4>Contents</h4>
-      <p>This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at <a href="https://jekyllrb.com/">jekyllrb.com</a></p>
+  </header>
 
-<p>You can find the source code for Minima at GitHub:
-<a href="https://github.com/jekyll">jekyll</a> /
-<a href="https://github.com/jekyll/minima">minima</a></p>
+  <div class="post-content row" itemprop="articleBody">
+    <div class="col-12">
+      <p>Over the last two weeks I have been rebuiling a <a href="https://greenhouse.planning.solar/" target="_blank">website meant for walking users through the greenhouse planning process</a>. Most of the content was redeveloped from <a href="http://greenhouseplanning.com/" target="_blank">the old site</a>. Take a second and look at both and note the overt user experience improvements.</p>
 
-<p>You can find the source code for Jekyll at GitHub:
-<a href="https://github.com/jekyll">jekyll</a> /
-<a href="https://github.com/jekyll/jekyll">jekyll</a></p>
+<p>The site was designed to be highly optimized, using a <a href="https://www.staticgen.com/" target="_blank">Static Site Generator</a> as it’s pseudo content management system. This is adventageous because non-technical users will never update the site, only a web developer. So we’re able to take the compilation out from the runtime of the server and precompile all the assets statically. This means pages get served to the client much quick, because they don’t have to wait for the server to generate them.</p>
 
-        
-    </div>
-    
-    <!-- <header class="col-12">
-      <h1 class="page-title">About</h1>
-    </header> -->
-    
-    
-    <div class="col-12 col-md-8">
-      
-      <p>This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at <a href="https://jekyllrb.com/">jekyllrb.com</a></p>
+<p>The site performs exceedingly well in speed tests. Using Google’s <a href="https://developers.google.com/speed/pagespeed/insights/" target="_blank">PageSpeed Insights</a>, I was able to bring the pagespeeds to:</p>
 
-<p>You can find the source code for Minima at GitHub:
-<a href="https://github.com/jekyll">jekyll</a> /
-<a href="https://github.com/jekyll/minima">minima</a></p>
+<ul>
+  <li>Mobile Speed: 99/100</li>
+  <li>Desktop Speed: 98/100</li>
+</ul>
 
-<p>You can find the source code for Jekyll at GitHub:
-<a href="https://github.com/jekyll">jekyll</a> /
-<a href="https://github.com/jekyll/jekyll">jekyll</a></p>
+<p>Through another performance grading tool, <a href="https://website.grader.com" target="_blank">Website Grader</a>, the site performed equally as well:</p>
+
+<ul>
+  <li>Performance: 27/30</li>
+  <li>Mobile: 30/</li>
+  <li>SEO: 30/30</li>
+  <li>Security: 10/10</li>
+</ul>
+
+<p>On my network I’m able to load the homepage in ~0.5 seconds with a page size of 334KB. The pages are being served up through an <a href="http://nginx.org/" target="_blank">NGINX</a> webserver. The sites are hosted on a scaleable</p>
+
+<p>This website structure is highly advantageous with how well optimized it can be. Future plans would be to include a <a href="https://en.wikipedia.org/wiki/Comparison_of_JavaScript_frameworks" target="_blank">JavaScript Framework</a> with <a href="https://en.wikipedia.org/wiki/Representational_state_transfer" target="_blank">RESTful services</a> for more dynamic content that spans several websites. I’m leaning towards <a href="https://angularjs.org/" target="_blank">AngularJS</a> however <a href="https://www.emberjs.com/" target="_blank">EmberJS</a> might make more sense for this usecase.</p>
+
+<p>There’s a few other hidden surprises within this latest website build. I’m hoping to show these off in the coming months.</p>
 
 
     </div>
+  </div>
 
-  </article>
-
-</main>
+</article>
 
      
 

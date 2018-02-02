@@ -4,6 +4,29 @@ layout: default
 {% assign projects = site.projects | sort: 'weight' | reverse  %} 
 {% assign contributions = site.contributions | sort: 'weight' | reverse  %} 
 
+<div class="conatiner-fluid" id="fold">
+  <div class="row py-5">
+    <div class="col-12 text-center ">
+      <h1 class="text-uppercase pb-3">
+        {{ site.title }}
+      </h1>
+      
+      <p class="pb-3">
+        {% for role in site.roles %}
+          {% if forloop.first %}
+            {{ role }}
+          {% else %}
+            - {{ role }}
+          {% endif %}
+        {% endfor %}
+      </p>
+      <form method="get" action="{{ site.resume_url }}">
+        <button  type="submit" class="btn btn-outline-light btn-lg "><i class="fa fa-download pr-3"></i> Download Resume</button>
+      </form>
+      
+    </div>
+  </div>
+</div>
 
 <div class="container">
   <div class="row">
@@ -70,8 +93,8 @@ layout: default
             
             
           </div>
-        {%endfor%}
-    {%endfor%}
+        {% endfor %}
+    {% endfor %}
     
     
   </div>

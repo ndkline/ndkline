@@ -507,3 +507,7 @@ body {
 .footer {
   background-size: cover;
   background-position: center; }
+
+#fold {
+  background: #63619D;
+  color: white; }
