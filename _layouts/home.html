@@ -71,31 +71,35 @@ layout: default
   </div>
 
   <div class="row">
-    <div class="col-12">        
-      <h2>Experience</h2>
+    <div class="col-12 mt-5">        
+      <h2 class="text-center text-uppercase display-1">Experience</h2>
+      <!-- <hr class="light"> -->
     </div>
 
     {% assign categories = site.experience | group_by: "category" | sort: "title" %}
     {% for category in categories %}
-      <div class="col-12">
-        <div class="h3">
+      <div class="col-12 mb-4">
+        <hr class="light">
+
+        <h3 class="display-4 text-center">
           {{ category.name }}
-        </div>
+        </h3>
+        <hr class="light">
       </div>
         {% for item in category.items %}
           <div class="col-12 col-md-4">
-              <div class="container">
-                  <div class="row justify-content-center">
-                      {% for icon in item.icons %}
-                      <div class="col text-center">
-                        <i class="fa fa-5x {{ icon }}" aria-hidden="true"></i>
-                      </div>
-                      {%endfor%}
-                  </div>
-                </div>
-            <h4>
+            <h4 class="text-center mb-0">
               {{item.title}}  
             </h4>
+              <div class="container">
+                  <div class="row justify-content-center py-3">
+                    {% for icon in item.icons %}
+                    <div class="col text-center">
+                      <i class="fa fa-2x {{ icon }}" aria-hidden="true"></i>
+                    </div>
+                    {%endfor%}
+                  </div>
+                </div>
             {{item.content}}
             
             
