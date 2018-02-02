@@ -1,0 +1,43 @@
+<header  role="banner">
+    {% assign pages = site.pages | sort: 'weight' %} 
+    {% assign default_paths = pages | map: "path"  %}
+    {% assign page_paths = site.header_pages | default: default_paths   %}
+    
+ 
+
+    {% if page_paths %}
+     
+      <nav class="navbar navbar-expand-lg justify-content-between navbar-light " >
+        <a class="navbar-brand" href="/">
+          <img src="{{ "/favicon-32x32.png" | relative_url}}"  height="30" alt="">
+        </a>
+        <a class="nav-link sitename" href="/"><span class="grey">nd</span><span class="bold">Kline</span> <span class="sr-only">(current)</span>
+
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse " id="navbar">
+
+          <ul class="navbar-nav  ml-auto">
+           
+            {% for path in page_paths %}
+              {% assign my_page = site.pages | where: "path", path | first %}
+              {% if my_page.title %}
+              {% if my_page.menu == 'main' %}
+              <li class="nav-item"></li>
+                <a class="nav-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+              </li>
+              {% endif %}
+              {% endif %}
+            {% endfor %} 
+            
+          
+
+          </ul>
+        
+        </div>
+      </nav>
+    {% endif %}
+</header>

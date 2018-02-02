@@ -1,0 +1,112 @@
+---
+layout: default
+---
+{% assign projects = site.projects | sort: 'weight' | reverse  %} 
+{% assign contributions = site.contributions | sort: 'weight' | reverse  %} 
+
+<div class="conatiner-fluid" id="fold">
+  <div class="row py-5">
+    <div class="col-12 text-center ">
+      <h1 class="text-uppercase">
+        {{ site.title }}
+      </h1>
+      <hr class="light">
+      <p class="pb-3">
+        {% for role in site.roles %}
+          {% if forloop.first %}
+            {{ role }}
+          {% else %}
+            - {{ role }}
+          {% endif %}
+        {% endfor %}
+      </p>
+      <form method="get" action="{{ site.resume_url }}">
+        <button  type="submit" class="btn btn-outline-light btn-lg "><i class="fa fa-download pr-3"></i> Download Resume</button>
+      </form>
+      
+    </div>
+  </div>
+</div>
+
+<div class="container ">
+  <div class="row ">
+    <div class="col-12 mt-5">
+      <h2 class="text-center text-uppercase display-1">Projects</h2>
+      <hr class="light">
+      
+    </div>
+    {% for project in projects %}
+    <div class="col-12 col-md-4 portfolio-item text-center px-5 pt-5">
+      <a href="{{ project.url }}" class="portfolio-link" >
+        <img src="{{ project.image }}"  class="img-responsive p-1" alt="">
+        <h3 class="mt-3">{{ project.title }}</h3>
+        <!-- <p>{{ project.description }}</p> -->
+      </a>
+    </div>
+    {% endfor %}
+
+
+    <div class="col-12 mt-5">        
+
+
+      <h2 class="text-center text-uppercase display-1">Contributions</h2>
+      <hr class="light">
+    </div>
+    {% for contrib in contributions %}
+      {% if forloop.first == true %}
+      <div class="col-12  portfolio-item text-left">
+      {% else %}
+      <div class="col-12 col-md-6 portfolio-item text-left">
+      {% endif %}
+
+    <!-- <div class="col-12 col-md-6 portfolio-item text-left"> -->
+      <img src="{{ contrib.image }}"  class="img-responsive" alt="">
+      <h3>
+        {{ contrib.title }}
+      </h3>
+      <p><a target="_blank" href="{{ contrib.protocol }}://{{ contrib.site }}"><i class="fa fa-globe pr-3" aria-hidden="true"></i>{{ contrib.site | escape }}</a> </p>
+      <p>{{ contrib.content }}</p>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="row">
+    <div class="col-12 mt-5">        
+      <h2 class="text-center text-uppercase display-1">Experience</h2>
+      <!-- <hr class="light"> -->
+    </div>
+
+    {% assign categories = site.experience | group_by: "category" | sort: "title" %}
+    {% for category in categories %}
+      <div class="col-12 mb-4">
+        <hr class="light">
+
+        <h3 class="display-4 text-center">
+          {{ category.name }}
+        </h3>
+        <hr class="light">
+      </div>
+        {% for item in category.items %}
+          <div class="col-12 col-md-4">
+            <h4 class="text-center mb-0">
+              {{item.title}}  
+            </h4>
+              <div class="container">
+                  <div class="row justify-content-center py-3">
+                    {% for icon in item.icons %}
+                    <div class="col text-center">
+                      <i class="fa fa-2x {{ icon }}" aria-hidden="true"></i>
+                    </div>
+                    {%endfor%}
+                  </div>
+                </div>
+            {{item.content}}
+            
+            
+          </div>
+        {% endfor %}
+    {% endfor %}
+    
+    
+  </div>
+</div>

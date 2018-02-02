@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+// Define defaults for each variable.
+
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$base-font-size:   16px !default;
+$base-font-weight: 400 !default;
+$small-font-size:  $base-font-size * 0.875 !default;
+$base-line-height: 1.5 !default;
+
+$spacing-unit:     30px !default;
+
+$light_steel_blue:  #D3D5EB !default;
+$powder_blue:       #F0F7F3 !default;
+$light_slate_gray:  #9E96C0 !default;
+$dark_sea_green:    #9EB9A5 !default;
+$darker_sea_green:  #51865F !default;
+$light_steel_blue:  #BCBBD9 !default;
+$dark_steel_blue:   #63619D !default;
+$background-nav:    #f4f8f7 !default;
+
+$text-color:       #111 !default;
+$background-color: #fdfdfd !default;
+$brand-color:      $dark_sea_green !default;
+$orange-color:     #F47B28 !default;
+$green-color:      #428E42 !default;
+$blue-color:       #14A1AF !default;
+$purple-color:     #9E1D58 !default;
+
+
+
+
+$grey-color:       #828282 !default;
+$grey-color-light: lighten($grey-color, 40%) !default;
+$grey-color-dark:  darken($grey-color, 25%) !default;
+
+// Width of the content area
+$content-width:    800px !default;
+
+$on-palm:          600px !default;
+$on-laptop:        800px !default;
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//   .wrapper {
+//     padding-right: $spacing-unit / 2;
+//     padding-left: $spacing-unit / 2;
+//   }
+// }
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
+}
+
+// Import partials.
+@import
+  "minima/base",
+  "minima/layout",
+  "minima/syntax-highlighting"
+;

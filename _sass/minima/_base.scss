@@ -1,0 +1,197 @@
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/**
+ * Basic styling
+ */
+body {
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+  color: $text-color;
+  background-color: $background-color;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+     -moz-font-feature-settings: "kern" 1;
+       -o-font-feature-settings: "kern" 1;
+          font-feature-settings: "kern" 1;
+  font-kerning: normal;
+}
+
+
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+  margin-bottom: $spacing-unit / 2;
+}
+
+
+
+/**
+ * Images
+ */
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+
+
+/**
+ * Figures
+ */
+figure > img {
+  display: block;
+}
+
+figcaption {
+  font-size: $small-font-size;
+}
+
+
+
+/**
+ * Lists
+ */
+ul, ol {
+  margin-left: $spacing-unit;
+}
+
+li {
+  > ul,
+  > ol {
+    margin-bottom: 0;
+  }
+}
+
+
+
+
+
+/**
+ * Links
+ */
+a {
+  color: $dark_steel_blue;
+  text-decoration: none;
+
+  // &:visited {
+  //   color: darken($brand-color, 15%);
+  // }
+  h3 {
+    color: black;
+  }
+  
+  &:hover {
+    color: darken($dark_steel_blue, 15%);
+    text-decoration: underline;
+  }
+  
+  .social-media-list &:hover {
+    text-decoration: none;
+
+    .username {
+      text-decoration: underline;
+    }
+  }
+}
+a.blue{
+  color: $blue-color;
+  &:hover{
+    color: darken($blue-color, 15%);
+    text-decoration: none;
+  }  
+}
+a.green{
+  color: $green-color;
+  &:hover{
+    color: darken($green-color, 15%);
+    text-decoration: none;
+  }  
+}
+a.orange{
+  color: $orange-color;
+  &:hover{
+    color: darken($orange-color, 15%);
+    text-decoration: none;
+  }  
+}
+a.purple{
+  color: $purple-color;
+  &:hover{
+    color: darken($purple-color, 15%);
+    text-decoration: none;
+  }  
+}
+
+
+
+.sitename{
+  font-weight: 300;
+  font-size: 150%;
+  padding-left: 0px;
+  color: darken($light_steel_blue, 60%);
+
+  &:hover {
+    color: darken($light_steel_blue, 15%);
+    text-decoration: underline;
+  }
+}
+#navbar > ul.navbar-nav.mr-auto > li > a{
+  color: #F47B28;
+}
+.grey{
+  color: #7F7F7F;
+}
+
+
+
+
+/**
+ * Clearfix
+ */
+%clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/**
+ * Icons
+ */
+.icon > svg {
+  display: inline-block;
+  vertical-align: middle;
+
+  path {
+    fill: $grey-color;
+  }
+}
+
+.social-media-list {
+  .icon {
+    padding-right: 5px;
+  }
+
+  li + li {
+    padding-top: 5px;
+  }
+}
+
+nav{
+  background: $background-nav;
+}

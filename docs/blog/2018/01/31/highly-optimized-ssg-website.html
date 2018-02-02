@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Highly Optimized SSG Website</title>
+  <meta name="description" content="Over the last two weeks I have been rebuiling a website meant for walking users through the greenhouse planning process. Most of the content was redeveloped ...">
+  
+  <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/assets/main.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/font-awesome/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="http://localhost:4000/blog/2018/01/31/highly-optimized-ssg-website.html">
+  <link rel="alternate" type="application/rss+xml" title="ndKline" href="/feed.xml">
+
+  
+</head>
+
+
+  <body>
+
+    <header  role="banner">
+     
+    
+    
+    
+ 
+
+    
+     
+      <nav class="navbar navbar-expand-lg justify-content-between navbar-light " >
+        <a class="navbar-brand" href="/">
+          <img src="/favicon-32x32.png"  height="30" alt="">
+        </a>
+        <a class="nav-link sitename" href="/"><span class="grey">nd</span><span class="bold">Kline</span> <span class="sr-only">(current)</span>
+
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse " id="navbar">
+
+          <ul class="navbar-nav  ml-auto">
+           
+            
+              
+              
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+              
+              <li class="nav-item"></li>
+                <a class="nav-link" href="/blog/">Blog</a>
+              </li>
+              
+              
+             
+            
+          
+
+          </ul>
+        
+        </div>
+      </nav>
+    
+</header>
+
+
+   
+    <article class="post container pt-5" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header row">
+    <div class="col-12">
+      <h1 class="post-title" itemprop="name headline">Highly Optimized SSG Website</h1>
+      <p class="post-meta">
+        <time datetime="2018-01-31T13:17:07-05:00" itemprop="datePublished">
+          
+          Jan 31, 2018
+        </time>
+        </p>
+    </div>
+  </header>
+
+  <div class="post-content row" itemprop="articleBody">
+    <div class="col-12">
+      <p>Over the last two weeks I have been rebuiling a <a href="https://greenhouse.planning.solar/" target="_blank">website meant for walking users through the greenhouse planning process</a>. Most of the content was redeveloped from <a href="http://greenhouseplanning.com/" target="_blank">the old site</a>. Take a second and look at both and note the overt user experience improvements.</p>
+
+<p>The site was designed to be highly optimized, using a <a href="https://www.staticgen.com/" target="_blank">Static Site Generator</a> as it’s pseudo content management system. This is adventageous because non-technical users will never update the site, only a web developer. So we’re able to take the compilation out from the runtime of the server and precompile all the assets statically. This means pages get served to the client much quick, because they don’t have to wait for the server to generate them.</p>
+
+<p>The site performs exceedingly well in speed tests. Using Google’s <a href="https://developers.google.com/speed/pagespeed/insights/" target="_blank">PageSpeed Insights</a>, I was able to bring the pagespeeds to:</p>
+
+<ul>
+  <li>Mobile Speed: 99/100</li>
+  <li>Desktop Speed: 98/100</li>
+</ul>
+
+<p>Through another performance grading tool, <a href="https://website.grader.com" target="_blank">Website Grader</a>, the site performed equally as well:</p>
+
+<ul>
+  <li>Performance: 27/30</li>
+  <li>Mobile: 30/</li>
+  <li>SEO: 30/30</li>
+  <li>Security: 10/10</li>
+</ul>
+
+<p>On my network I’m able to load the homepage in ~0.5 seconds with a page size of 334KB. The pages are being served up through an <a href="http://nginx.org/" target="_blank">NGINX</a> webserver. The sites are hosted on a scaleable</p>
+
+<p>This website structure is highly advantageous with how well optimized it can be. Future plans would be to include a <a href="https://en.wikipedia.org/wiki/Comparison_of_JavaScript_frameworks" target="_blank">JavaScript Framework</a> with <a href="https://en.wikipedia.org/wiki/Representational_state_transfer" target="_blank">RESTful services</a> for more dynamic content that spans several websites. I’m leaning towards <a href="https://angularjs.org/" target="_blank">AngularJS</a> however <a href="https://www.emberjs.com/" target="_blank">EmberJS</a> might make more sense for this usecase.</p>
+
+<p>There’s a few other hidden surprises within this latest website build. I’m hoping to show these off in the coming months.</p>
+
+
+    </div>
+  </div>
+
+</article>
+
+     
+
+    <footer id="footer" class="footer text-center p-5">
+    <div class="footer-above">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col col-md-4">
+                    <h3 class="display-4">Social</h3>
+                    <hr class="lighter">
+                    <ul class="list-inline m-0">
+                        <li class="px-2 list-inline-item">
+                            <a href="https://github.com/ndkline" class="btn-social btn-outline"><i class="fa fa-2x fa-github-alt"></i></a>
+                        </li>
+                        <li class="px-2 list-inline-item">
+                            <a href="https://twitter.com/ndkline" class="btn-social btn-outline"><i class="fa fa-2x fa-twitter"></i></a>
+                        </li>
+                        <li class="px-2 list-inline-item">
+                            <a href="https://www.linkedin.com/in/ndkline" class="btn-social btn-outline"><i class="fa fa-2x fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>   
+                <div class="footer-col col-md-4">
+                    <h3 class="display-4">Contact</h3>
+                    <hr class="lighter">
+                    <ul class="list-unstyled m-0">
+                        <li>Call/text: <a href="tel:717-813-4929">717-813-4929</a> <br></li>
+                        <li>Email: <a href="mailto:ndkline@theagora.us">ndkline@theagora.us</a> <br></li>
+                        <li>Twitter: <a href="https://twitter.com/ndkline">@ndkline</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col col-md-4">
+                    <h3 class="display-4">Location</h3>
+                    <hr class="lighter">
+                    <!-- <p>135 E Nittany Ave<br>STE #5030<br>State College, PA 16801</p> -->
+                    <p>
+                    Travels between Pennsylvania, NYC, Boston, with the occasional cross country trip (Colorado, Texas, Kansas)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-below">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    Copyright &copy; <a href="http://twitter.com/ndkline">@ndkline</a> 2018
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+  </body>
+
+</html>

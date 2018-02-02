@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+
+<main class="container" aria-label="Content">
+
+  <article class="row">
+
+    <div class="col-md-10">
+        <h1 class="display-3">{{ page.title | escape }}</h1>
+        <p class="lead" style="font-weight:400; padding:1% 0;">{{ page.description  }}</p>
+    </div>
+    
+    <div class="col-md-2">
+        <img src="{{ page.image | relative_url }}"  class="img-responsive" alt="">
+    </div>
+    
+    <div class="col-12 col-md-6">
+      
+      {{ content }}
+    </div>
+
+    
+
+    {% if page.image-2-content %}
+    <div class="col-12 col-md-3">
+        <img src="{{ page.image-content | relative_url }}"  class="img-responsive" alt="">
+        <p class="text-center">{{ page.image-content-caption }}</p>
+    </div>
+    <div class="col-12 col-md-3">
+        <img src="{{ page.image-2-content | relative_url }}"  class="img-responsive" alt="">
+        <p class="text-center">{{ page.image-2-content-caption }}</p>
+    </div>
+    {% elsif page.image-content %}
+    <div class="col-12 col-md-6">
+        <img src="{{ page.image-content | relative_url }}"  class="img-responsive" alt="">
+        <p class="text-center">{{ page.image-content-caption }}</p>
+    </div>
+    {% endif %}
+
+
+  </article>
+
+</main>
