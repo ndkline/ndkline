@@ -98,3 +98,24 @@ hr.light{
   border-top: solid 4px;
   text-align: center;
 }
+hr.lighter{
+  margin: 25px auto ;
+  padding: 0;
+  max-width: 250px;
+  border: 0;
+  border-top: solid 2px;
+  text-align: center;
+}
+
+footer{
+  background: $light_steel_blue;
+  color: darken(#63619D, 10%);
+  a{
+    color: lighten(#63619D, 10%);
+  }
+  p{
+    font-size: 16px;
+  }
+}
+
+
