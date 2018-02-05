@@ -118,7 +118,7 @@
 
 <main class="container" aria-label="Content">
 
-  <article class="row">
+  <article class="row mb-5">
 
     <div class="col-12">
       
@@ -132,9 +132,62 @@
     
     <div class="col-12 col-md-8">
       
-      
+      <h2 id="contact-inquiries">Contact Inquiries</h2>
+
+<p>Please state the intent of the inquiry within the message portion of the form. Guidelines for common requests for roles I serve are below:</p>
+
+<h3 id="presenter">Presenter</h3>
+
+<p>There’s several topics I have presented on or am willing to present on in the future. Topics can be requested, however here are some that are ready-to-go:</p>
+
+<ul>
+  <li>Drupal 8</li>
+  <li>Twig Templating</li>
+  <li>Jekyll and Static Site Generators</li>
+  <li>Static Site Generators with JavaScript Frameworks</li>
+</ul>
+
+<p>When submitting a request for me to present, please include the topic, date, location, as well as any other perinate information.</p>
+
+<h3 id="contractor">Contractor</h3>
+
+<p>If you’re seeking to fill a contract position, please submit with:</p>
+
+<ul>
+  <li>Technology Stack</li>
+  <li>Timeline</li>
+  <li>Budget</li>
+  <li>Location if not remote (All inquiries will be assumed to be remote unless otherwise specified)</li>
+</ul>
 
     </div>
+
+
+    
+    <div class="col-12 col-md-4">    
+      
+<form>
+    <h3>Contact</h3>
+    <div class="form-group">
+      <label for="name-field">Full Name</label>
+      <input type="text" class="form-control" id="name-field" placeholder="Full Name">
+    </div>
+    <div class="form-group">
+      <label for="email-field">Email address</label>
+      <input type="email" class="form-control" id="email-field" aria-describedby="emailHelp" placeholder="Enter email" name="_replyto">
+    </div>
+    <div class="form-group">
+        <label for="content-field">Message</label>
+        <small id="contentHelp" class="form-text text-muted">Please mention the intent of the inquiry</small>
+        <textarea class="form-control" id="content-field" rows="3" name="content"></textarea>
+    </div>
+
+    <input type="text" name="_gotcha" style="display:none" />
+    <input type="hidden" name="_format" value="plain" />
+    <button type="submit" value="Send" class="btn btn-primary">Submit</button>
+  </form>
+    </div>
+        
 
   </article>
 
