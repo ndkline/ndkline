@@ -12,13 +12,13 @@ layout: default
   </div>
 </div> -->
 
-<div class="jumbotron jumbotron-fluid mb-5" style="position:relative;background-image:url('{{ page.cover }}');background-size:cover;background-position:center;  height: 65vh; color:white;">
-  <div class="container" style="position: absolute; bottom: 0;background:rgba(0,0,0,.7); width:100%; max-width:none; text-shadow: rgb(0, 0, 0) 1px 2px;">
+<div class="jumbotron jumbotron-fluid mb-5 p-0" style="position:relative;background-image:url('{{ page.cover }}');  height: 26vh; color:white;">
+  <div class="container py-5" style="position: absolute; background:rgba(99,97,157,.2); width:100%; max-width:none; text-shadow: rgb(0, 0, 0) 1px 2px;">
     <div class="row">
       <div class="offset-1 col-11">
 
         <h1 class="display-3">{{ page.long_title | escape }}</h1>
-        <p class="lead" style="font-weight:400; padding:1% 0;">{{ page.description  }}</p>
+        <p class="lead pl-2" style="font-weight:400;">{{ page.description  }}</p>
       </div>
     </div>
   </div>
@@ -32,11 +32,12 @@ layout: default
       
     </div>
     
+    {% if page.toc %}
     <div class="col-12 col-md-4">
       <h4>Contents</h4>
       {{ content | toc_only }}        
     </div>
-    
+    {% endif %}
     <!-- <header class="col-12">
       <h1 class="page-title">{{ page.title | escape }}</h1>
     </header> -->
