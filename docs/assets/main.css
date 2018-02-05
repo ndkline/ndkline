@@ -148,6 +148,10 @@ nav {
     text-decoration: none;
     cursor: pointer; }
 
+.grad-dsb {
+  background: linear-gradient(to bottom right, rgba(99, 97, 157, 0.91), #63619d);
+  color: white; }
+
 /**
  * Site header
  */
@@ -521,8 +525,12 @@ body {
   background-position: center; }
 
 #fold {
-  background: #63619D;
+  background-image: url("/img/footer_lodyas.png") !important;
+  background-size: 25%;
+  background-repeat: repeat;
   color: white; }
+  #fold .row {
+    background: linear-gradient(to bottom right, rgba(99, 97, 157, 0.1), #63619d); }
 
 hr.light {
   margin: 25px auto;

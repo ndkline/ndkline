@@ -214,3 +214,13 @@ nav{
     cursor: pointer;
   }  
 }
+
+.grad-dsb{
+  background:
+  linear-gradient(
+    to bottom right,
+    rgba(99, 97, 157, .91),
+    rgba(99, 97, 157, 1)
+  );
+  color: white;
+}
