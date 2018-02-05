@@ -25,7 +25,7 @@ There's several topics I have presented on or am willing to present on in the fu
 * Jekyll and Static Site Generators
 * Static Site Generators with JavaScript Frameworks
 
-When submitting a request for me to present, please include the topic, date, location, as well as any other perinate information.
+When submitting a request for me to present, please include the topic, date, location, as well as any other pertinent information.
 
 ### Contractor
 

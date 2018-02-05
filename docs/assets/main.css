@@ -136,6 +136,18 @@ a.purple {
 nav {
   background: #f4f8f7; }
 
+.btn-primary {
+  background: #63619D;
+  background: linear-gradient(to bottom right, rgba(99, 97, 157, 0.91), #63619d);
+  border-color: #63619D !important;
+  cursor: pointer; }
+  .btn-primary:hover {
+    background-color: #45446e !important;
+    border-color: #45446e !important;
+    color: white !important;
+    text-decoration: none;
+    cursor: pointer; }
+
 /**
  * Site header
  */

@@ -195,3 +195,22 @@ a.purple{
 nav{
   background: $background-nav;
 }
+
+.btn-primary{
+  background:$dark_steel_blue;
+  background:
+  linear-gradient(
+    to bottom right,
+    rgba(99, 97, 157, .91),
+    rgba(99, 97, 157, 1)
+  );
+  border-color: $dark_steel_blue!important;
+  cursor: pointer;
+  &:hover{
+    background-color: darken($dark_steel_blue, 15%)!important;
+    border-color: darken($dark_steel_blue, 15%)!important;
+    color:white!important;
+    text-decoration: none;
+    cursor: pointer;
+  }  
+}

@@ -2,13 +2,25 @@
 layout: default
 ---
 
+<div class="jumbotron jumbotron-fluid mb-5 p-0" style="position:relative;background-image:url('/img/footer_lodyas.png');  height: 26vh; color:white;">
+  <div class="container py-5" style="position: absolute; background:rgba(99,97,157,.2); width:100%; max-width:none; text-shadow: rgb(0, 0, 0) 1px 2px;">
+    <div class="row">
+      <div class="offset-1 col-11">
+
+        <h1 class="display-3">{{ page.long_title | escape }}</h1>
+        <p class="lead pl-1" style="font-weight:400;">{{ page.description  }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="blog container">
-  <div class="row">
+  <!-- <div class="row">
     <div class="col-12">
         <h1 class="display-3">{{ page.long_title | escape }}</h1>
         <p class="lead">{{ page.description | escape }}</p>
     </div>
-  </div>
+  </div> -->
 
   <div class="row">
     <div class="col-12">
